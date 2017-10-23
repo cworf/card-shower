@@ -7,9 +7,38 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title>Template</title>
+    <title>Deck of Cards</title>
   </head>
   <body>
-
+    <div class="container">
+      <h1 class="display-3">Deck of Cards</h1>
+      <form id="cards">
+        <label for="diamond">
+          <input name="suit" type="radio" value="diamond">
+          Diamond
+        </label>
+        <label for="hearts">
+          <input name="suit" type="radio" value="hearts">
+          Hearts
+        </label>
+        <label for="spades">
+          <input name="suit" type="radio" value="spades">
+          Spades
+        </label>
+        <label for="clubs">
+          <input name="suit" type="radio" value="clubs">
+          Clubs
+        </label>
+        <label for="all">
+          <input name="suit" type="radio" value="all">
+          All
+        </label>
+        <button type="submit" name="button">Submit</button>
+      </form>
+      <div id="results">
+        <ul class="list">
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
