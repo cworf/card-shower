@@ -7,13 +7,13 @@ $(document).ready(function(){
       $('.list').empty();
       allsuits.forEach(function(suit){
         values.forEach(function(value){
-          $('.list').append("<li>" + value + " of " + suit + "." + "</li>");
+            $('.list').append("<li class='" + suit + "'>" + value + " of " + suit + "." + "</li>");
         });
       });
     } else {
       $('.list').empty();
       values.forEach(function(value){
-        $('.list').append("<li>" + value + " of " + suits + "." + "</li>");
+        $('.list').append("<li class='" + suits + "'>" + value + " of " + suits + "." + "</li>");
       });
     };
     event.preventDefault();

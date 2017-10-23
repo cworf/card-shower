@@ -1,0 +1,54 @@
+div.jumbotron{
+  background-color: #000;
+  color: #e0e0e0;
+  text-align: center;
+  box-shadow: 5px 5px red, 10px 10px black, 15px 15px red, 20px 20px black;
+}
+
+
+p.lead{
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+label[for=diamond] {
+    color: #ff4747;
+}
+
+label[for=hearts] {
+    color: #ff4747;
+}
+
+label[for=all] {
+    color: #ffce07;
+}
+
+li {
+  list-style-type: none;
+}
+li.hearts:before {
+    font-family: fontawesome;
+    content: "\f004";
+    color: red;
+    font-size: 15px;
+}
+
+li:before {
+    margin-right: 10px;
+    font-size: 30px;
+    line-height: 1;
+}
+
+li.spades:before {
+    content: "\2660";
+    color: black;
+}
+
+li.diamonds:before {
+    content: "\2666";
+    color: red;
+}
+
+li.clubs:before {
+    content: "\2663";
+}
