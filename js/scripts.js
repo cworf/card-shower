@@ -4,10 +4,16 @@ $(document).ready(function(){
     var allsuits = ["hearts", "spades", "diamonds", "clubs"]
     var suits = $('input[name="suit"]:checked').val();
     if(suits === "all"){
+      $('.list').empty();
       allsuits.forEach(function(suit){
         values.forEach(function(value){
-          $('.list').append("<li>" + value + " of " + suit + "." + "</li>")
+          $('.list').append("<li>" + value + " of " + suit + "." + "</li>");
         });
+      });
+    } else {
+      $('.list').empty();
+      values.forEach(function(value){
+        $('.list').append("<li>" + value + " of " + suits + "." + "</li>");
       });
     };
     event.preventDefault();
