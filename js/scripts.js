@@ -16,6 +16,7 @@ $(document).ready(function(){
         $('.list').append("<li class='" + suits + "'>" + value + " of " + suits + "." + "</li>");
       });
     };
+    $('.jumbotron').addClass('expand');
     event.preventDefault();
   });
 });

@@ -2,7 +2,10 @@ div.jumbotron{
   background-color: #000;
   color: #e0e0e0;
   text-align: center;
-  box-shadow: 5px 5px red, 10px 10px black, 15px 15px red, 20px 20px black;
+  transition: all .5s ease;
+  }
+div.jumbotron.expand {
+  box-shadow: 5px 5px red, 10px 10px black, 15px 15px red, 20px 20px black, 25px 25px red, 30px 30px black, 35px 35px red, 30px 30px black;
 }
 
 
